@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ping pong</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://images.unsplash.com/photo-1576617497557-22895ee5930b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+        alt="ping pong racket"
+        class="img"
+      />
+      <h1 class="container__text">Ping Pong Score Keeper</h1>
+      <div class="container__score">
+        <div class="players">
+          <p class="players__score">
+            <span class="container__player1">0</span> to
+            <span class="container__player2">1</span>
+          </p>
+
+          <p class="players__text">Use the buttons to keep score.</p>
+          <div class="announce"></div>
+        </div>
+        <div class="container__dropbox">
+          <label for="max-score" class="label">Playing To</label>
+          <select name="max-score" id="max-score" class="option">
+            <option value="">--Please choose an option--</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+      </div>
+      <div class="game_buttons">
+        <button class="player1-btn btn">+1 Player1</button>
+        <button class="player2-btn btn">+1 Player2</button>
+        <button class="reset btn">Reset</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
