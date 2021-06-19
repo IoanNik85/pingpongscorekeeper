@@ -57,7 +57,6 @@ option.addEventListener("click", function (e) {
     finalScore = Number(option.value);
     player1score.innerText = 0;
     player2score.innerText = 0;
-    // console.log(finalScore);
   }
 });
 
@@ -68,16 +67,12 @@ player1Button.addEventListener("click", function () {
   }
 });
 
-player2Button.addEventListener(
-  "click",
-  function () {
-    if (player2scoreValue < finalScore) {
-      player2score.innerText = Number(player2score.innerText) + 1;
-      player2scoreValue = Number(player2score.innerText);
-    }
-  },
-  true
-);
+player2Button.addEventListener("click", function () {
+  if (player2scoreValue < finalScore) {
+    player2score.innerText = Number(player2score.innerText) + 1;
+    player2scoreValue = Number(player2score.innerText);
+  }
+});
 
 resetBtn.addEventListener("click", function () {
   initialState();
