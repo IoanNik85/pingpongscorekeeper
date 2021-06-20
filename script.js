@@ -52,7 +52,7 @@ const winGame = function (finalScore, player1scoreValue, player2scoreValue) {
 
 initialState();
 
-option.addEventListener("click", function (e) {
+option.addEventListener("change", function (e) {
   if (option.value) {
     finalScore = Number(option.value);
     player1score.innerText = 0;

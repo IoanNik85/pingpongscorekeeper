@@ -99,9 +99,10 @@ img {
 }
 
 .btn {
-  padding: 1em 0;
+  padding: 0.8em 0;
   flex-basis: 100%;
   border: none;
+  letter-spacing: 2px;
   color: #f5e2b5;
   cursor: pointer;
   border: 2px solid #a58742;
